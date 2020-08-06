@@ -15,7 +15,7 @@ Because this is a command-line application that won’t be deployed, you’ll al
 ```
 AS A developer
 I WANT a README generator
-SO THAT can quickly create a professional README for a new project
+SO THAT I can quickly create a professional README for a new project
 ```
 
 ## Acceptance Criteria
