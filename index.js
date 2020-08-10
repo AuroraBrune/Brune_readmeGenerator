@@ -2,12 +2,14 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
+
 const writeFileAsync = util.promisify(fs.writeFile);
+
 // array of questions for user
-const questions = [
+const questions = inquirer.prompt([
     {
         type: "input",
-        message: "What is the title or your project?",
+        message: "What is the title of your project?",
         name: "title"
     },
     {
@@ -16,7 +18,7 @@ const questions = [
         name: "description"
     },
     {
-        type: "list",
+        type: "input",
         message: "What is your Table of Contents?",
         name: "tableOfContents"
     },
@@ -31,9 +33,10 @@ const questions = [
         name: "usage"
     },
     {
-        type: "input",
+        type: "list",
         message: "What license would you like on your project?",
-        name: "license"
+        name: "license",
+        choices: ['MIT', 'GPL', 'Apache']
     },
     {
         type: "input",
@@ -51,7 +54,9 @@ const questions = [
         name: "contact"
     }
 
-];
+]).then(answers => {
+    console.log("Answers:", answers);
+});
 
 // function to write README file
 function writeToFile(readMe, data) {
