@@ -2,6 +2,8 @@
 const generateMarkdown = data => {
   return `# ${data.title}
 
+  ${data.username}
+
   ![License: ${(data.lic) ? data.lic : 'None'}](https://img.shields.io/badge/License-${(data.lic) ? data.lic : 'None'})
 
   _Repo by ${data.name}_
