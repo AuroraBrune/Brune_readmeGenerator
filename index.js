@@ -1,12 +1,18 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const axios = require("axios");
 const util = require("util");
-
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = inquirer.prompt([
+    {
+        type: "input",
+        message: "What is your GitHub user name?",
+        name: "username"
+    },
     {
         type: "input",
         message: "What is the title of your project?",
@@ -54,15 +60,22 @@ const questions = inquirer.prompt([
         name: "contact"
     }
 
-]).then(answers => {
-    console.log("Answers:", answers);
+]).then(data => {
+    const queryUrl = `https://api.github.com/users/${data.username}`;
+    axios.get(queryUrl).then(function(res) {
+        const githubInfo = {
+             name: res.data.name,
+             profile: res.data.html_url
+        };
+    }); console.log('data', data);
 });
 
 // function to write README file
-function writeToFile(readMe, data) {
-
-
-}
+const writeToFile = (fileName, data) => {
+    fs.writeFile('README' + '.md', data, githubInfo, error =>
+    error ? console.error(error) :
+    console.log(`${'README' + '.md'} generated`))  
+}; 
 
 // function to initialize program
 function init() {
