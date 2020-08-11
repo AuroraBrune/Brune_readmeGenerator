@@ -116,7 +116,7 @@ function generateREADME(answers) {
     
         <h3 id="cont">CONTRIBUTING</h3>
         <P>Contributors to this project include:
-         <a href="answers"> ${answers.name} </a> 
+         <a href="answers"> undefined </a> 
         </P>
         <h3 id="tests">TESTS</h3>
         <p>Testing this application was performed from my Visual Studio Code. </p>
@@ -127,7 +127,9 @@ function generateREADME(answers) {
     
     </body>
     
-    </html>`;
+    </html>`
+
+
 }
 async function init() {
     try {
