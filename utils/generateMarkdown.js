@@ -1,32 +1,38 @@
 // function to generate markdown for README
-const generateMarkdown = data => {
-    return `# ${data.title}
-
-   ${data.username}
+function generateMarkdown(data)  {
+  return `# ${data.title}
 
    ![License: ${(data.lic) ? data.lic : 'None'}](https://img.shields.io/badge/License-${(data.lic) ? data.lic : 'None'})
 
-  _Repo by ${data.name}_
+  Repo by ${data.name}
+  ${data.username}
 
-   _${data.description}_
+  ##Description
+   ${data.description}
 
-   _Table of Contents_
+   ##Table of Contents
+  -Title
+  -Description
+  -Installation
+  -Usage
+  -License
+  -Contributors
+  -Tests
+  -Questions
 
-   _Installation:_
+   ##Installation:
    ${data.installation}
 
- _Usage:_
+  ##Usage:
    ${data.usage}
 
-  _Contributors:_
+  ##Contributors:
   ${data.contributors}
 
-
-
-  _Tests:_
+  ##Tests:
   ${data.tests}
 
-   _Contact:_
+   ##Contact:
   ${data.contact}
 
  `;
