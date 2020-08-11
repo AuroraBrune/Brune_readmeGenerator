@@ -1,35 +1,35 @@
-// // function to generate markdown for README
-// const generateMarkdown = data => {
-//   return `# ${data.title}
+// function to generate markdown for README
+const generateMarkdown = data => {
+    return `# ${data.title}
 
-//   ${data.username}
+   ${data.username}
 
-//   ![License: ${(data.lic) ? data.lic : 'None'}](https://img.shields.io/badge/License-${(data.lic) ? data.lic : 'None'})
+   ![License: ${(data.lic) ? data.lic : 'None'}](https://img.shields.io/badge/License-${(data.lic) ? data.lic : 'None'})
 
-//   _Repo by ${data.name}_
+  _Repo by ${data.name}_
 
-//   _${data.description}_
+   _${data.description}_
 
-//   _Table of Contents_
+   _Table of Contents_
 
-//   _Installation:_
-//   ${data.installation}
+   _Installation:_
+   ${data.installation}
 
-//   _Usage:_
-//   ${data.usage}
+ _Usage:_
+   ${data.usage}
 
-//   _Contributors:_
-//   ${data.contributors}
+  _Contributors:_
+  ${data.contributors}
 
 
 
-//   _Tests:_
-//   ${data.tests}
+  _Tests:_
+  ${data.tests}
 
-//   _Contact:_
-//   ${data.contact}
+   _Contact:_
+  ${data.contact}
 
-// `;
-// }
+ `;
+}
 
-// module.exports = generateMarkdown;
+module.exports = generateMarkdown

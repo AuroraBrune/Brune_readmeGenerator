@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 // const axios = require("axios");
 const util = require("util");
-// const generateMarkdown = require('./utils/generateMarkdown');
+// const generate = require('./utils/generateMarkdown');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -74,16 +74,16 @@ function generateREADME(answers) {
         <h3 id="desc">DESCRIPTION </h3>
         <p>${answers.description}</p>
         <h3>TABLE OF CONTENTS</h3>
-            <ul>
-               <li><a href="#title">Title</a></li> 
-              <li><a href="#desc">Description</a></li>  
-                <li><a href="#install">Installation</a></li>
-                <li><a href="#use">Usage</a></li>
-                <li><a href="#lic">License</a></li>
-                <li><a href="#cont">Contributors</a></li>
-                <li><a href="#tests">Tests</a></li>
-                <li><a href="#questions">Questions</a></li>
-            </ul>
+        <ul>
+            <li><a href="#title">Title</a></li>
+            <li><a href="#desc">Description</a></li>
+            <li><a href="#install">Installation</a></li>
+            <li><a href="#use">Usage</a></li>
+            <li><a href="#lic">License</a></li>
+            <li><a href="#cont">Contributors</a></li>
+            <li><a href="#tests">Tests</a></li>
+            <li><a href="#questions">Questions</a></li>
+        </ul>
         <h3 id="install">INSTALLATION</h3>
         <p>${answers.installation}</p>
         <h3 id="use">USAGE</h3>
@@ -96,9 +96,9 @@ function generateREADME(answers) {
         <p>${answers.tests}</p>
         <h3 id="questions">QUESTIONS/CONTACT</h3>
         <p>If you have questions about this project, or would like to contribute, please contact <br>
-        the developer, ${answers.name} at: <a href="${answers.contact}"></a></p>> 
+            the developer, ${answers.name} at: <a href="${answers.contact}"></a></p>>
     </body>
-    </html>`;
+    </html>`
 }
 async function init() {
     try {
