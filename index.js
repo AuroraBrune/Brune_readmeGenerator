@@ -98,7 +98,7 @@ function generateREADME(answers) {
         <p>If you have questions about this project, or would like to contribute, please contact <br>
         the developer, ${answers.name} at: <a href="${answers.contact}"></a></p>> 
     </body>
-    </html>;`
+    </html>`;
 }
 async function init() {
     try {
