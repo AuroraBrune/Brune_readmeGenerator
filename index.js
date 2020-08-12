@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const axios = require("axios");
 const util = require("util");
 const generate = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -55,9 +54,8 @@ function promptUser() {
             name: "contact"
         }
     ]).then(response => {
+        //return the responses to the generateMarkdown page to create the README page with the responses
         return response
-
-
     });
 
 }
@@ -68,7 +66,6 @@ function promptUser() {
 async function init() {
     try {
         const answers = await promptUser();
-
         const txt = generate(answers);
         await writeFileAsync("README.md", txt);
     } catch (err) {
