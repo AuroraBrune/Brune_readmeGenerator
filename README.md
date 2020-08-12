@@ -32,5 +32,5 @@
    ## Contact:
   If you have any questions or concerns, or would like to contribute, please contact me at akbrune@hotmail.com
 
- ![readmeonGitHub](./assets/eadmeonGitHub.jpg)
+ ![readmeonGitHub](assets/readmeonGitHub.jpg)
  ![READMEonVScode](./assets/READMEonVScode.jpg)
