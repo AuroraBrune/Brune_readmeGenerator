@@ -35,7 +35,10 @@
 
 ------------------------
 ------------------------
-Screenshots of the readme on vs code, and on GitHub
+Screenshot of the README on vs code,
 --
  ![READMEonVScode](./assets/READMEonVScode.jpg)
+ -
+ Screenshot of the README on GitHub
+ --
  ![readmeonGitHub](assets/readmeonGitHub.jpg)
