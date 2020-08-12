@@ -7,32 +7,32 @@ function generateMarkdown(data)  {
   Repo by ${data.name}
   ${data.username}
 
-  ##Description
+  ## Description
    ${data.description}
 
-   ##Table of Contents
-  -Title
-  -Description
-  -Installation
-  -Usage
-  -License
-  -Contributors
-  -Tests
-  -Questions
+   ## Table of Contents
+  - Title
+  - Description
+  - Installation
+  - Usage
+  - License
+  - Contributors
+  - Tests
+  - Questions
 
-   ##Installation:
+   ## Installation:
    ${data.installation}
 
-  ##Usage:
+  ## Usage:
    ${data.usage}
 
-  ##Contributors:
+  ## Contributors:
   ${data.contributors}
 
-  ##Tests:
+  ## Tests:
   ${data.tests}
 
-   ##Contact:
+   ## Contact:
   ${data.contact}
 
  `;

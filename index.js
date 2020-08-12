@@ -55,30 +55,26 @@ function promptUser() {
             name: "contact"
         }
     ]).then(response => {
-         return response
-        // async  (resoponse) => {
-        //     await fs.writeFileAsync("")
-          
-        });
+        return response
+
+
+    });
 
 }
 // function to write README file
-// function writeToFile(fileName, data) {
-
-// }
+// function writeToFile(fileName, data)
 
 // function to initialize program
 async function init() {
     try {
-        const answers = await promptUser(); 
-    
+        const answers = await promptUser();
+
         const txt = generate(answers);
         await writeFileAsync("README.md", txt);
     } catch (err) {
         console.log(err);
     }
 }
-
 
 // function call to initialize program
 init();
