@@ -26,7 +26,7 @@ function promptUser() {
         {
             type: "input",
             message: "What are your installation requirements?",
-            name: "install"
+            name: "installation"
         },
         {
             type: "input",
