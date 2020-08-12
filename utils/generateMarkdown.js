@@ -4,21 +4,20 @@ function generateMarkdown(data)  {
 
    ![License: ${(data.lic) ? data.lic : 'None'}](https://img.shields.io/badge/License-${(data.lic) ? data.lic : 'None'})
 
-  Repo by ${data.name}
-  ${data.username}
+  Project by ${data.username}
 
   ## Description
    ${data.description}
 
    ## Table of Contents
-  - Title
-  - Description
-  - Installation
-  - Usage
-  - License
-  - Contributors
-  - Tests
-  - Questions
+  - [Title](#Title)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Tests](#Tests)
+  - [Contact](#Contact)
 
    ## Installation:
    ${data.installation}
