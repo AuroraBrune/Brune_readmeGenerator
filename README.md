@@ -24,7 +24,7 @@
   - [Contact](#Contact)
 
    ## Installation:
-   To install this app, users can clone or fork the repo. Load it in your project and answer the questions on the command line in the terminal in your code editor. 
+   To install this app, users can clone or fork the repo. Load it in your project and answer the questions that can be initiated by typng 'node index.js' on the command line in the terminal in your code editor. 
 
   ## Usage:
    Once the questions are answered, push the changes up to GitHub and your README for your project will be loaded to your repository. 
