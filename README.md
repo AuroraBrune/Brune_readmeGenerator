@@ -48,3 +48,6 @@ Screenshot of the README on vs code
  Screenshot of the README on GitHub
  --
  ![readmeonGitHub](assets/readmeonGitHub.jpg)
+
+ Video of the app. 
+ https://drive.google.com/file/d/1V14v4Tt2LIJOZ3uiiC2_86op1JIsz0J1/view
